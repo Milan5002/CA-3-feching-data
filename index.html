@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthyBites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <h2 id="logo" >👨🏼‍🍳HealthyBites🍽️</h2>
+    <div>
+      <input id="searchInput" type="text" placeholder="search food">
+      <button id="search">🔍</button>
+    </div>
+    <div id="links">
+      <a href="#random">random</a>
+      <a href="#searched_food">search</a>
+    </div>
+  </nav>
+
+  <h1 id="heading">Welcome to the healthyBites🍴</h1>
+  <h2>"Step into the culinary world at Healthybites! Explore a curated selection of recipes designed to make your
+    kitchen the heart of flavor. From fresh ingredients to delightful creations, embark on a journey of delicious
+    discovery. Happy cooking!"</h2>                                                                                                                                               
+    <marquee id="topdish" direction="right" behavior="scroll" scrollamount="20">
+      <p>TODAY'S TOP DISH ! 😋</p>
+  </marquee>
+
+  <div id="ingredients" onclick="getIngredients(mealId)"></div>
+
+  <div id="main">
+    <div id="random"></div>
+  </div>
+
+ <br><br><br>
+
+ <h1 id="Searched">Searched food items</h1>
+  <div id="grid">
+    <div id="searched_food"></div>
+  </div>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+
+</html>

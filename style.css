@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Lilita+One&family=Vina+Sans&display=swap');
+
+body{
+  background-color: wheat;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+nav{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#searchInput{
+  height: 27px;
+  width: 300px;
+  border-radius: 50px;
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  color: red;
+}
+#search{
+  height: 32px;
+  border-radius: 40px;
+}
+#logo{
+  color: white;
+  font-family: kavoon;
+}
+#heading{
+  font-family: kavoon;
+}
+
+#imgRandom{
+  height: 300px;
+  width:400px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#imgCard{
+  height: 250px;
+  width:250px;
+  border-top-right-radius: 60px;
+ border-bottom-left-radius: 60px;
+ margin-top: 30px;
+}
+
+#random{
+  background-color: rgb(252, 253, 255);
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#searched_food{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 60px;
+}
+
+#search_div{
+background-color: rgb(42, 29, 6);
+text-align: center;
+border-radius: 25px;
+
+}
+
+#flex{
+  display: flex;
+  justify-content: space-around;
+
+}
+#heading{
+  font-size: 40px;
+  text-align: center;
+  color: red ;
+}
+#links{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#topdish{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: 900;
+
+}
+
+.detailBtn{
+  height: 30px;
+  width: 60px;
+  padding: 2px 4px;
+  margin-top: 20px;
+}
+#meal_name{
+ color: white;
+ font-family: kavoon;
+}
+
+.cook-btn,.detailBtn{
+  background-color: greenyellow;
+  height: 40px;
+  width: 80px;
+  font-size: 15px;
+  border-radius: 18px;
+  font-family: Vina+Sans;
+  margin-left: 220px;
+  color: crimson;
+}
+.detailBtn{
+  margin-left: 0px;
+}
+
+.cook-btn:hover{
+  transform: scale(0.85);
+}
+
+#ingredients{
+background-color:white;
+position: fixed;
+z-index: 1000;
+height: 50vh;
+overflow: scroll;
+width: 70vw;
+display: none;
+margin-left: 200px;
+margin-bottom: 100px;
+}
+#detailimg{
+  height:400px;
+  width: 300px;
+}
+#detailpage{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 470px){
+  #searched_food{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+  }
+  #detailimg{
+    height:150px;
+    width: 150px;
+  }
+  #ingredients{
+    background-color:white;
+    position: fixed;
+    z-index: 1000;
+    height: 20vh;
+    overflow: scroll;
+    width: 100vw;
+    display: none;
+    margin-left: 0;
+    margin-bottom: 3000px;
+    }
+ 
+}
